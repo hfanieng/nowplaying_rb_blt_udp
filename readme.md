@@ -29,4 +29,4 @@ Player Status ![Player Status][id]
 
 [id]: img/played_displayed_via_blt.png
 
-[license-link]: https://github.com/hfanieng/nowplaying_rb_blt_udp/blob/master/LICENSE
+[license-link]: https://github.com/hfanieng/nowplaying_rb_blt_udp/blob/main/LICENSE
