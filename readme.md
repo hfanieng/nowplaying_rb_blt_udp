@@ -4,22 +4,22 @@
 
 ### Technology
 
-- Rekordbox 7.0 from AlphaTheta (formerlery known as Pioneer DJ)
-- Pro DJ Link enabled Hardware (XDJ-XZ, RB-DMX-1)
-- 3rd Party Software (Beat Link Trigger from Deep Symmetry)
-- UDP as protocol from clojures driven BLT to Python
+- [Rekordbox](http://rekordbox.com) 7.0 from [AlphaTheta](http://http://alphatheta.com/) (formerlery known as Pioneer DJ)
+- [Pro DJ Link](https://support.pioneerdj.com/hc/en-us/articles/4405902925593-What-is-the-PRO-DJ-LINK-function) enabled Hardware (my Pioneer XDJ-XZ)
+- 3rd Party Software [Beat Link Trigger](https://github.com/Deep-Symmetry/beat-link-trigger) from [Deep Symmetry](https://deepsymmetry.org)
+- UDP as protocol from clojures driven BLT to [Python](python.org)
 - Python scripts to bring the data from BLT via UDP into an UI
 
 ### Motivation
 
 For years i like to play my favorite songs with Rekordbox, installed on my Mac.
-I own some controllers like the DDJ 800, RB-DMX-1, DDJ-XP2 und the XDJ-XZ as standalone player.
-Played around with different solution to get my lighting in sync of the playing song.
+I own some controllers, the DDJ 400, DDJ 800, RB-DMX-1, DDJ-XP2 und the XDJ-XZ as standalone player.  
+
+Played around with different solutions like SoundSwitch to get my lighting in sync of the playing song.
 
 ### Idea
 
-My idea is to bring that together by using Pro DJ Link in combination with Deep Symmetry's
-great solution Beat Link Trigger and python
+My idea is to bring that together by using Pro DJ Link in combination with Deep Symmetry's great solution Beat Link Trigger and python
 
 Player Status ![Player Status][id]
 
