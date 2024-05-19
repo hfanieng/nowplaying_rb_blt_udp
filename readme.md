@@ -2,6 +2,10 @@
 
 ## Aim of the project is to build a bridge from what is now playing on a Pro DJ Link device
 
+> **Disclaimer**: This project is **not** affiliated with Pioneer Corp. or its related companies
+in any way and has been written independently! NowPlayingXZ is licensed under the
+[MIT license][license-link]. The maintainers of the project are not liable for any damages to your Rekordbox library.
+
 ### Technology
 
 - [Rekordbox](http://rekordbox.com) 7.0 from [AlphaTheta](http://http://alphatheta.com/) (formerlery known as Pioneer DJ)
@@ -24,3 +28,5 @@ My idea is to bring that together by using Pro DJ Link in combination with Deep 
 Player Status ![Player Status][id]
 
 [id]: img/played_displayed_via_blt.png
+
+[license-link]: https://github.com/hfanieng/nowplaying_rb_blt_udp/blob/master/LICENSE
