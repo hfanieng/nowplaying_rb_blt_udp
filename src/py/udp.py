@@ -21,9 +21,9 @@ def socket_receiver():
             try:
                 json_data = json.loads(data)  # Daten dekodieren
                 print("JSON-Daten erfolgreich dekodiert:", json_data)
-
-                # Zugriff auf den Wert von 'trackArtist' und Aktualisierung von 'interpret'
-                interpret = json_data.get('trackArtist', '')
+                beat = json_data['beat']  # Zugriff auf den Wert von 'beat'
+                interpret = json_data.get('trackArtist', '') # Zugriff auf den Wert von 'trackArtist' und Aktualisierung von 'interpret'
+                
 
             except json.JSONDecodeError as e:
                 print("Fehler beim Dekodieren der JSON-Daten:", e)
