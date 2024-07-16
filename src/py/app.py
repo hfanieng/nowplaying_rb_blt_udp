@@ -1,5 +1,9 @@
+from flask import Flask, jsonify
 import socket
 import json
+import threading
+
+app = Flask(__name__)
 
 def socket_receiver():
     # Erstellen eines UDP-Sockets
@@ -27,4 +31,11 @@ def socket_receiver():
     finally:
         sock.close()  # Socket schließen
 
-socket_receiver()
+@app.route('/start-socket')
+def start_socket():
+    thread = threading.Thread(target=socket_receiver)
+    thread.start()
+    return jsonify({"message": "Socket receiver started"})
+
+if __name__ == '__main__':
+    app.run(port=8000)
