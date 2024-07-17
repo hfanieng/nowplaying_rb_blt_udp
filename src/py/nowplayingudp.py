@@ -3,7 +3,6 @@ import threading
 import json
 import tkinter as tk
 from PIL import Image, ImageTk
-import requests
 from io import BytesIO
 
 # URL des Bildes
