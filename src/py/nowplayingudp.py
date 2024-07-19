@@ -29,8 +29,12 @@ window.state('zoomed')
 
 # column 0-3 width 240 rowspan 4
 
+# zeichne einen kreis
+# create a circle
+
 cover_label = tk.Label(window, text="Cover", bg='#191919', anchor='n', width=240, height=240) #Zeile 0 (0)
 beat1_label = tk.Label(window, text="1", bg="#191919", fg='silver', font=("Arial", 18,), width=60, height=40, padx=10)
+
 # column 1 width 60
 beat2_label = tk.Label(window, text="2", bg="#191919", fg='silver', font=("Arial", 18,), width=60, height=40, padx=10)
 # column 2 width 60
