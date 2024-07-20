@@ -27,6 +27,40 @@ My idea is to bring that together by using Pro DJ Link in combination with Deep 
 
 Player Status ![Player Status][id]
 
+### UML Class diagramm
+
+```mermaid
+classDiagram
+    class Song {
+        +String trackTitle
+        +String artist
+        +String genre
+        +String key
+        +Double bpm
+        +String trackBank
+        +int masterPlayerNumber
+        +String comment
+        +String label
+        
+        +void addBeat(Beat beat)
+        +void start()
+        +void stop()
+        +void updatePhrase(int beatNumber, String phraseType, String phraseSection, int timeReached, bool fill)
+    }
+
+    class Beat {
+        +int number
+        +String phraseType
+        +String phraseSection
+        +int timeReached
+        +bool fill
+        
+        +void updatePhrase(String phraseType, String phraseSection, int timeReached, bool fill)
+    }
+
+    Song "1" --> "4" Beat : has
+```
+
 [id]: img/played_displayed_via_blt.png
 
 [license-link]: https://github.com/hfanieng/nowplaying_rb_blt_udp/blob/main/LICENSE
