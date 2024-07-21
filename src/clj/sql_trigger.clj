@@ -1,6 +1,4 @@
-(ns your-namespace)
-  (add-library '[org.clojure/java.jdbc "0.7.12"])
-  (require '[clojure.data.jdbc :as jdbc])  
+(require '[clojure.data.jdbc :as jdbc])  
 
 (def db-spec {:subprotocol "mysql"
               :subname "//localhost:3306/v078803"
