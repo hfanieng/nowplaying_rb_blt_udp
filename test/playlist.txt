@@ -1,0 +1,56 @@
+Timestamp: 2024-07-21T00:26:50.436573
+   Artist: Yazz & The Plastic Population
+    Title: The Only Way Is Up (Long Version)
+
+Timestamp: 2024-07-21T00:28:15.175792
+   Artist: Technotronic feat. Felly
+    Title: Pump up the Jam (Edit)
+
+Timestamp: 2024-07-21T00:31:50.945969
+   Artist: Inner City
+    Title: Big Fun 2017
+
+Timestamp: 2024-07-21T00:35:10.134731
+   Artist: S'Express
+    Title: Theme from S'Express
+      BPM: 118.29845121383667
+
+Timestamp: 2024-07-21T00:41:00.493180
+   Artist: Will Downing
+    Title: A Love Supreme (Edit)
+      BPM: 121.37374864578247
+
+Timestamp: 2024-07-21T00:44:49.226952
+   Artist: Ten City
+    Title: That's the Way Love Is (Deep House Mix Extended Version)
+      BPM: 120.34864950180054
+
+Timestamp: 2024-07-21T00:51:35.473433
+   Artist: Lisa Stansfield
+    Title: This Is The Right Time (Extended Version)
+      BPM: 123.91639652252198
+
+Timestamp: 2024-07-21T00:57:15.782395
+   Artist: Soft Cell
+    Title: Tainted Love-Where Did Our Love Go (Original 12" Version)
+      BPM: 146.3781277656555
+
+Timestamp: 2024-07-21T09:16:22.601465
+   Artist: Lenny Kravitz
+    Title: Love Revolution
+      BPM: 131.31319034576416
+
+{"timestamp":"2024-07-21T09:16:22.602215","artist":"Lenny Kravitz","title":"Love Revolution","bpm":131.31319034576416}
+Timestamp: 2024-07-21T09:18:58.477759
+   Artist: Lenny Kravitz
+    Title: The Chamber
+      BPM: 118.11755136489869
+
+{"timestamp":"2024-07-21T09:18:58.480668","artist":"Lenny Kravitz","title":"The Chamber","bpm":118.11755136489869}
+Timestamp: 2024-07-21T09:23:55.856370
+   Artist: Lenny Kravitz
+    Title: Blue Electric Light
+      BPM: 77.38493537902832
+
+{"timestamp":"2024-07-21T09:23:55.858468","artist":"Lenny Kravitz","title":"Blue Electric Light","bpm":77.38493537902832}
+{"timestamp":"2024-07-21T09:33:32.582260","artist":"Lenny Kravitz","title":"TK421","bpm":109.54490852355957}

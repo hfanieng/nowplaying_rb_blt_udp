@@ -11,7 +11,7 @@ track_data = {}
 
 @app.route('/')
 def index():
-    return render_template('index.html', **track_data)
+    return render_template('index_1.html', **track_data)
 
 @app.route('/update', methods=['GET'])
 def update():
@@ -26,28 +26,22 @@ def convert_time(milliseconds):
 def update_track_info(json_data):
     global track_data
     track_data = {
-        "phrase_type": json_data.get("phraseType"),
-        "track_key": json_data.get("trackKey"),
-        "track_comment": json_data.get("trackComment"),
-        "master_player_number": json_data.get("masterPlayerNumber"),
-        "track_time_reached": convert_time(json_data.get("trackTimereached")) if json_data.get("trackTimereached") is not None else None,
-        "phrase_section": json_data.get("phraseSection"),
-        "track_artist": json_data.get("trackArtist"),
-        "track_genre": json_data.get("trackGenre"),
+        "timestamp": json_data.get("timestamp"),
+        "track_key": json_data.get("key"),
+        "track_comment": json_data.get("track_comment"),
+        "device": json_data.get("device"),
+        "track_artist": json_data.get("artist"),
+        "track_genre": json_data.get("track_genre"),
         "bpm": round(json_data.get("bpm"), 2) if json_data.get("bpm") is not None else None,
-        "track_bank": json_data.get("trackBank"),
-        "fill": json_data.get("fill"),
-        "beat_number": json_data.get("beatNumber"),
-        "beat": json_data.get("beat"),
-        "track_title": json_data.get("trackTitle"),
-        "track_label": json_data.get("trackLabel")
+        "track_title": json_data.get("title"),
+        "track_label": json_data.get("label")
     }
     socketio.emit('update', track_data)
 
 def socket_receiver():
     # Erstellen eines UDP-Sockets
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    port = 7000
+    port = 7001
     sock.bind(('', port))
     print("Socket verbunden mit Port", port)
     receiving = True
