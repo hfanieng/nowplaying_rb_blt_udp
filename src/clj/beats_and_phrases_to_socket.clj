@@ -7,10 +7,11 @@
                "trackArtist"        track-artist
                "trackBank"          track-bank
                "trackComment"       track-comment
+               "trackDevice"		 device-name
                "trackKey"           track-key
                "trackGenre"         track-genre
                "trackLabel"         track-label
                "trackTimereached"   track-time-reached
                "trackTitle"         track-title
-               "fill"               (= section :fill)}]
+			"fill"               (= section :fill)}]
 (send-json-to-touchdesigner globals payload))
