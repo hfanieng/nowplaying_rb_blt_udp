@@ -1,7 +1,10 @@
+# Empfang des aktuellen Tracks nach Track-Updates über UDP und Anzeige in einer Webanwendung
+# Receiving the current track after track updates via UDP and displaying it in a web application
+
 import socket
 import threading
 import json
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonifyx
 from flask_socketio import SocketIO, emit
 
 app = Flask(__name__)
