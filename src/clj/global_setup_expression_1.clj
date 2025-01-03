@@ -9,3 +9,6 @@
 (swap! globals assoc :py-socket (java.net.DatagramSocket.))
 (swap! globals assoc :py-address (java.net.InetAddress/getLocalHost))
 (swap! globals assoc :py-port 7001)
+
+;; Add a new setup for sending data to the Astro web app
+(swap! globals assoc :webapp-url "http://localhost:3000/api/track")

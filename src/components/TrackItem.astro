@@ -1,0 +1,24 @@
+---
+const { track } = Astro.props;
+---
+
+<div class="track-item">
+  <h3>{track.title}</h3>
+  <p>{track.artist}</p>
+</div>
+
+<style>
+  .track-item {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  .track-item h3 {
+    margin: 0;
+  }
+  .track-item p {
+    margin: 0;
+    color: #666;
+  }
+</style>

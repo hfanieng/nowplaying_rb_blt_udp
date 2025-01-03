@@ -1,0 +1,25 @@
+---
+const { track } = Astro.props;
+---
+
+<div class="track-info">
+  <h2>{track.title}</h2>
+  <p><strong>Artist:</strong> {track.artist}</p>
+  <p><strong>Genre:</strong> {track.genre}</p>
+  <p><strong>BPM:</strong> {track.bpm}</p>
+  <p><strong>Key:</strong> {track.key}</p>
+  <p><strong>Label:</strong> {track.label}</p>
+  <p><strong>Comment:</strong> {track.comment}</p>
+</div>
+
+<style>
+  .track-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .track-info h2 {
+    margin-top: 0;
+  }
+</style>

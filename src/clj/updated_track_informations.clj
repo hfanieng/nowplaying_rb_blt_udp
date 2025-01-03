@@ -12,4 +12,4 @@
                "trackLabel"         track-label
                "trackTitle"         track-title
                }]
-        (send-json-to-python globals payload)))))
+        (send-json-to-webapp globals payload)))))

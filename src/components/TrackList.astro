@@ -1,0 +1,18 @@
+---
+import TrackItem from './TrackItem.astro';
+const { tracks } = Astro.props;
+---
+
+<div class="track-list">
+  {tracks.map(track => (
+    <TrackItem track={track} />
+  ))}
+</div>
+
+<style>
+  .track-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+</style>
