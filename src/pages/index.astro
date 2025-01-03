@@ -1,0 +1,17 @@
+---
+import TrackList from '../components/TrackList.astro';
+import { fetchTrackData } from '../utils/api';
+
+const trackData = await fetchTrackData();
+---
+
+<html>
+  <head>
+    <title>Now Playing</title>
+    <link rel="stylesheet" href="../styles/global.css">
+  </head>
+  <body>
+    <h1>Now Playing</h1>
+    <TrackList {trackData} />
+  </body>
+</html>

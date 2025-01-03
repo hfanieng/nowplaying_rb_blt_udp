@@ -10,7 +10,8 @@
                 {:timestamp (str (java.time.LocalDateTime/now))
                  :artist track-artist
                  :title track-title
-                 :bpm effective-tempo}))
+                 :bpm effective-tempo})
+  (send-json-to-webapp globals track-metadata))
 
 (when trigger-active?
   (when (not= track-metadata (:last-track @locals))

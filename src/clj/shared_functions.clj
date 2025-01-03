@@ -1,9 +1,7 @@
-(defn send-json-to-touchdesigner
-  "Encodes a map as JSON and sends it in a UDP packet
-  to TouchDesigner."
+(defn send-json-to-webapp
+  "Encodes a map as JSON and sends it to the Astro web app."
   [globals m]
   (let [message (str (cheshire.core/encode m) "\n")  ; Encode as JSON line.
-       {:keys [td-address td-port td-socket]} @globals  ; Find where to send.
-       data (.getBytes message)  ; Get JSON as raw byte array.
-       packet (java.net.DatagramPacket. data (count data) td-address td-port)]
-  (.send td-socket packet)))
+        {:keys [webapp-url]} @globals  ; Find where to send.
+        response (clj-http.client/post webapp-url {:body message :content-type :json})]
+    (println "Response from web app:" response)))

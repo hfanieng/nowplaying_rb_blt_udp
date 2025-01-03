@@ -8,4 +8,4 @@
                          :title track-title
                          :bpm effective-tempo}
                         :escape-slash false)]  ; optional, to control escaping slashes
-       (spit "/Users/heikofanieng/Documents/GitHub/nowplaying_rb_blt_udp/test/playlist.json" (str log-entry "\n") :append true)))))
+       (send-json-to-webapp globals log-entry)))))

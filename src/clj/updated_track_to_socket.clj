@@ -1,12 +1,12 @@
 (import '[java.net DatagramSocket DatagramPacket InetAddress])
 
-(defn send-udp [host port message]
-  (let [socket (DatagramSocket.)
-        address (InetAddress/getByName host)
-        buffer (.getBytes message)
-        packet (DatagramPacket. buffer (count buffer) address port)]
-    (.send socket packet)
-    (.close socket)))
+(defn send-json-to-webapp
+  "Encodes a map as JSON and sends it to the Astro web app."
+  [globals m]
+  (let [message (str (cheshire.core/encode m) "\n")  ; Encode as JSON line.
+        {:keys [webapp-url]} @globals  ; Find where to send.
+        response (clj-http.client/post webapp-url {:body message :content-type :json})]
+    (println "Response from web app:" response)))
 
 (when trigger-active?
   (when (not= track-metadata (:last-track @locals))
@@ -19,7 +19,5 @@
 					:id rekordbox-id
                          :title track-title
                          :bpm effective-tempo}
-                        :escape-slash false)
-            udp-host "127.0.0.1"  ; Ziel-Host
-            udp-port 7001]       ; Ziel-Port
-        (send-udp udp-host udp-port log-entry)))))
+                        :escape-slash false)]
+        (send-json-to-webapp globals log-entry)))))
